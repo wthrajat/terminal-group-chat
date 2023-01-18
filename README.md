@@ -1,6 +1,6 @@
 # Terminal Group Chat
 
-Allows multiple clients to connect to the server and exchange messages with each other in real-time (in terminal duh). The clients can also join or leave a group at any time.
+Allows multiple clients to connect to the server and exchange messages with each other in real-time (in terminal duh). The clients can also join or leave a group at any time. (Made for an experiment)
 
 # Run:
 
