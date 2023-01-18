@@ -1,8 +1,11 @@
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.util.ArrayList;
 import java.net.Socket;
+
 public class Server {
 
+    private ArrayList<ClientHandler> clientHandlers = new ArrayList<ClientHandler>();
     private ServerSocket ssObj;
     public Server(ServerSocket ssObj) {
         this.ssObj = ssObj;
@@ -15,7 +18,7 @@ public class Server {
                 Socket socketObj = ssObj.accept();
 
                 System.out.println("A user has been connected!");
-                ClientHandler clientHandler = new ClientHandler(socketObj);
+                ClientHandler clientHandler = new ClientHandler(socketObj, clientHandlers);
 
                 Thread thread = new Thread(clientHandler);
 
