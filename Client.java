@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.Scanner;
+import java.net.UnknownHostException;
+
 
 public class Client {
     private Socket socketObj;
@@ -15,8 +17,8 @@ public class Client {
     public Client(Socket socketObj, String username) {
         try {
             this.socketObj = socketObj;
-            this.bufferedReader = new BufferedReader(new OutputStreamWriter(socketObj.getOutputStream()));
-            this.bufferedWriter = new BufferedWriter(new InputStreamReader(socketObj.getInputStream()));
+            this.bufferedReader = new BufferedReader(new InputStreamReader(socketObj.getInputStream()));
+            this.bufferedWriter = new BufferedWriter(new OutputStreamWriter(socketObj.getOutputStream()));
             this.username = username;
 
         } catch (IOException e) {
@@ -80,7 +82,7 @@ public class Client {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnknownHostException, IOException {
         Scanner scannerObj = new Scanner(System.in);
         System.out.println("Enter your username for GroupChat");
         String username = scannerObj.nextLine();
