@@ -7,7 +7,7 @@ Allows multiple clients to connect to the server and exchange messages with each
 1. Clone the repo and **cd** into it:
     ```
     git clone https://github.com/wthrajat/terminal-groupChat.git
-    cd terminal-groupChat
+    cd terminal-group-chat
     ```
 
 2. Compile the code: 
