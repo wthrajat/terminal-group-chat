@@ -17,17 +17,22 @@ Allows multiple clients to connect to the server and exchange messages with each
     javac ClientHandler.java
     ```
 
-3. Start the server:
+3. Start the Server:
     ```
     java Server
     ```
 
-4. Open another instance of the terminal and start the client:
+4. Open another instance of the terminal and start the ClientHandler:
+    ```
+    java ClientHandler
+    ```
+
+5. Open another instance of the terminal and start the Client:
     ```
     java Client
     ```
     
-5. Start messaging across the terminal
+6. Start messaging across the terminal
 
 
 ### Note
