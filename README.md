@@ -4,35 +4,9 @@ Allows multiple clients to connect to the server and exchange messages with each
 
 # Run:
 
-1. Clone the repo and **cd** into it:
-    ```
-    git clone https://github.com/wthrajat/terminal-groupChat.git
-    cd terminal-group-chat
-    ```
-
-2. Compile the code: 
-    ```
-    javac Server.java
-    javac Client.java
-    javac ClientHandler.java
-    ```
-
-3. Start the Server:
-    ```
-    java Server
-    ```
-
-4. Open another instance of the terminal and start the ClientHandler:
-    ```
-    java ClientHandler
-    ```
-
-5. Open another instance of the terminal and start the Client:
-    ```
-    java Client
-    ```
-    
-6. Start messaging across the terminal
+1. Compile all the java files into java classes.
+2. Start the server then rest of the files.
+3. Start messaging across the terminals.
 
 
 ### Note
